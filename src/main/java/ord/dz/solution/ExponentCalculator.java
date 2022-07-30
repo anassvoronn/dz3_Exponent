@@ -1,7 +1,7 @@
 package ord.dz.solution;
 
 public class ExponentCalculator {
-    public void getNumberPower(int number, int degree) {
+    public int getNumberPower(int number, int degree) {
         if (degree < 0) {
             throw new IllegalArgumentException("Multiplication does not occur");
         }
@@ -10,7 +10,6 @@ public class ExponentCalculator {
             result *= number;
 
         }
-
+        return result;
     }
-
 }
