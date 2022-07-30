@@ -2,12 +2,12 @@ package ord.dz.solution;
 
 public class ExponentCalculator {
 
-    public int getNumberPower(int number, int degree) {
+    public int getNumberPower(final int number, final int degree) {
         if (degree < 0) {
             throw new IllegalArgumentException("Multiplication does not occur");
         }
         int result = 1;
-        for (; degree != 0; --degree) {
+        for (int i = degree; i != 0; --i) {
             result *= number;
 
         }
